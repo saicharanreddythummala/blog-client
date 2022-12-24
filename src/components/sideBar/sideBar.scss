@@ -1,0 +1,25 @@
+.sideBar {
+    background-color: #fafcff;
+    height: max-content;
+    padding: 2rem;
+    position: sticky;
+    top: 110px;
+    margin-left: 2rem;
+
+
+    
+  .categories {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+      padding: 0;
+    }
+    ul > li {
+      list-style: none;
+      cursor: pointer;
+      text-align: justify;
+    }
+  }
+}

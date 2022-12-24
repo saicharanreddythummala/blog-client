@@ -1,0 +1,20 @@
+.register{
+    background-color: transparent;
+    .card-body{
+        width: 40%;
+        .card-title{
+            font-family: "Ubuntu", 'sans-serif';
+            font-size: 2.369rem;
+            font-weight: 700;
+        }
+    }
+    
+   #file_input_label, [type='file'],button{
+        font-family: "Lustira", 'sans-serif' !important;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    #file_input{
+        display: none;
+    }
+}

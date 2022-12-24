@@ -1,0 +1,26 @@
+#login{
+    .l_main{
+        width: 40%;
+    }
+    .card-title{
+        font-family: "Ubuntu", 'sans-serif';
+        font-size: 2.369rem;
+        font-weight: 700;
+    }
+    .card-subititle{
+        font-family: "Lustira", 'sans-serif';
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .l_btm, #frgt_pwd>p, .logins{
+        font-family: "Lustira", 'sans-serif' !important;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    a{
+        text-decoration: none;
+    }
+    #sign_up{
+        cursor: pointer;
+    }
+}

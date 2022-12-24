@@ -1,0 +1,23 @@
+.post {
+  .main {
+    .image{
+      height: 450px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h3 {
+      font-size: 2.369rem;
+      font-family: 'Ubuntu', 'sans-serif';
+      font-weight: 700;
+    }
+    h4 {
+      font: 1.777rem 'Lustira', 'sans-serif';
+    }
+  }
+  .post_p {
+    font-family: 'Metrophobic', 'sans-serif';
+  }
+}
