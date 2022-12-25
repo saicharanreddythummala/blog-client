@@ -29,8 +29,8 @@ export default function Login() {
             </p>
             <div className="d-flex flex-column">
               <TextField
-                id="email"
-                label="Email"
+                id="username"
+                label="Username"
                 variant="standard"
                 className="mb-5"
                 size="small"
