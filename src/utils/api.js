@@ -1,4 +1,4 @@
-const host = 'https://blog-server-sable.vercel.app';
+const host = 'https://blog-server-sable.vercel.app/api';
 const getPostsApi = `${host}/post/`;
 const getCategoriesApi = `${host}/category/`;
 const registerApi = `${host}/user/register`;
