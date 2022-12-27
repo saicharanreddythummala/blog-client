@@ -6,10 +6,13 @@ import WriteBlog from '../components/writeBlog/WriteBlog';
 import UserUpdate from '../components/userUpdate/UserUpdate';
 import EditPost from '../components/editPost/EditPost';
 import Contact from '../components/contact/Contact';
+import NavBar from '../components/nav/NavBar';
 
 export default function Main() {
   return (
     <>
+      <NavBar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post/:id" element={<PostPage />} />

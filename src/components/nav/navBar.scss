@@ -27,6 +27,7 @@
     .u_divider {
       position: relative;
       .u_options {
+        z-index: 1000;
         width: 8rem;
         position: absolute;
         background-color: #fafcff;
@@ -46,6 +47,68 @@
     .u_divider:hover .u_options {
       display: block !important;
       transition: all 0.3s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav_bar {
+    justify-content: space-between;
+    .n_left {
+      flex-grow: 1;
+      margin-right: 0;
+    }
+    .n_right {
+      .u_divider {
+        position: relative;
+        .u_opt-m {
+          position: absolute;
+          display: block !important;
+          right: 20%;
+          background-color: #fafcff;
+          width: 6rem;
+          border-radius: 0.2em;
+          right: -40%;
+          ul {
+            margin: 0;
+            padding: 0;
+          }
+          li {
+            cursor: pointer;
+            list-style: none;
+            padding: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav_bar {
+    
+    .n_right {
+      .u_divider {
+        position: relative;
+        .u_opt-m {
+          position: absolute;
+          display: block !important;
+          right: 20%;
+          background-color: #fafcff;
+          width: 6rem;
+          border-radius: 0.2em;
+          right: -40%;
+          ul {
+            margin: 0;
+            padding: 0;
+          }
+          li {
+            cursor: pointer;
+            list-style: none;
+            padding: 0.4rem;
+          }
+        }
+      }
     }
   }
 }

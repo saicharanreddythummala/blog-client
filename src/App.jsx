@@ -28,7 +28,6 @@ const {loading} = useContext(UserContext)
         <div>loading</div>
       ) : (
         <>
-          <NavBar />
           {/* <Categories /> */}
 
           <div id="wrapper" className="flex-grow-1 d-flex flex-column">

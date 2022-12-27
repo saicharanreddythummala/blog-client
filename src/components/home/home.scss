@@ -31,3 +31,20 @@
     padding-top: 5rem;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .home {
+    background-image: none;
+
+    h1 {
+      width: 100%;
+    }
+  }
+  .h_main {
+    flex-direction: column !important;
+  }
+  .h_main> div{
+        width: 100%;
+      }
+}
+

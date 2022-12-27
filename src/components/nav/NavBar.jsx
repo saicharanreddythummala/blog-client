@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navBar.scss';
 import { Avatar } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,7 +9,9 @@ export default function NavBar() {
   const { logoutHandler } = useContext(UserContext);
   const navigate = useNavigate();
 
-  const {user} = useContext(UserContext);
+  const { user } = useContext(UserContext);
+
+  const [show, setShow] = useState(false);
 
   return (
     <>
@@ -32,10 +34,21 @@ export default function NavBar() {
         </div>
         <div className="n_right me-4 d-flex align-items-center">
           <div className="u_divider">
-            <Avatar>H</Avatar>
-            <div className="u_options">
+            <Avatar onClick={() => setShow(!show)}>H</Avatar>
+            <div
+              className={
+                window.innerWidth < 1000 && show ? `u_opt-m` : 'u_options'
+              }
+            >
               <ul>
-                <li className='border-bottom pb-2' onClick={()=>{navigate(`/update/${user._id}`)}}>My account</li>
+                <li
+                  className="border-bottom pb-2"
+                  onClick={() => {
+                    navigate(`/update/${user._id}`);
+                  }}
+                >
+                  My account
+                </li>
                 <li
                   onClick={() => {
                     logoutHandler();

@@ -1,4 +1,4 @@
-.posts {
+  .posts {
   padding: 1rem 2rem;
 
   .MuiGrid-root {
@@ -54,5 +54,28 @@
         text-overflow: clip;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .posts{
+    .MuiGrid-root{
+      width: 100% !important;
+      padding: 1rem;
+      margin: 0;
+      // display: block;
+      flex-direction: column;
+
+      .MuiGrid-item{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+      .card{
+        width: 100%;
+      }
+      
+    }
+    
   }
 }

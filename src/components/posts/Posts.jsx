@@ -23,7 +23,7 @@ export default function Posts() {
       <div className="posts">
         <Grid container spacing={1}>
           {posts.map((post, i) => (
-            <Grid item xs={6} key={post._id}>
+            <Grid item xs={12} md={6} key={post._id}>
               <div className="card">
                 <div className="card-header">
                   <img src={post.image ? post.image.url : ''} alt="" />

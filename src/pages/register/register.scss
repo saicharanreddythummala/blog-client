@@ -18,3 +18,23 @@
         display: none;
     }
 }
+
+
+@media screen and (max-width:600px) {
+    .register{
+        .card-body{
+            width: 80%;
+            
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    .register{
+        .card-body{
+            width: 60%;
+            .card-title{
+                font-size: 1.369rem;
+            }
+        }
+    }
+}
