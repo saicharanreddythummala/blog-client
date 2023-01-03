@@ -14,7 +14,7 @@ export default function PostPage() {
   useEffect(() => {
     async function getPost() {
       try {
-        const { data } = await axios.get(`${getPostsApi}/${params.id}`);
+        const { data } = await axios.get(`${getPostsApi}${params.id}`);
 
         setPost(data);
       } catch (err) {
