@@ -4,7 +4,7 @@ iamablog
 
 ## Demo link
 
-https://iamablog.netlify.app/login
+https://iamablog.netlify.app/
 
 *Server code* https://github.com/saicharanreddythummala/blog-server
 
